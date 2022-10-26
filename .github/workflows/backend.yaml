@@ -17,4 +17,6 @@ jobs:
           distribution: 'adopt'
 
       - name: Build Gradle Project
-        run: ./gradlew build jacocoTestReport
+        run: |
+          cd examples/backend
+          ./gradlew build jacocoTestReport

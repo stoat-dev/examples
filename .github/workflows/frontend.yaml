@@ -17,11 +17,11 @@ jobs:
 
       - name: Build Frontend App
         run: |
-          cd frontend
+          cd examples/frontend
           npm install
           npm run build
 
       - name: Build Storybook
         run: |
-          cd frontend
+          cd examples/frontend
           npm run build-storybook

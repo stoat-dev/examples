@@ -2,14 +2,14 @@ hosting:
   static:
     app_test_coverage:
       name: "`app` test coverage"
-      path: app/build/reports/html/jacoco
+      path: examples/app/build/reports/html/jacoco
     lib_test_coverage:
       name: "`lib` test coverage"
-      path: lib/build/reports/html/jacoco
+      path: examples/lib/build/reports/html/jacoco
     docs:
       name: docs
       path: docs/build
     frontend:
       name: storybook
-      path: frontend/storybook-static
+      path: examples/frontend/storybook-static
 comment_template: ".stoat/template.jinja2"
