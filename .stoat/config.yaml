@@ -12,4 +12,4 @@ hosting:
     frontend:
       name: storybook
       path: examples/frontend/storybook-static
-comment_template: ".stoat/template.jinja2"
+comment_template: ".stoat/template.hbs"

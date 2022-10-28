@@ -25,3 +25,8 @@ jobs:
         run: |
           cd examples/frontend
           npm run build-storybook
+
+      - name: Stoat
+        uses: ./action
+        with:
+          supabase_key: ${{ secrets.SUPABASE_ANON_KEY }}

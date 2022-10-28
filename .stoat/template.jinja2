@@ -1,7 +1,0 @@
-**The latest docs for your projects**. Learn more about [Stoat ↗︎](https://stoat.dev)
-
-| Name | Status | Link | Updated |
-| :--- | :----- | :------ | :------ |
-{% for item in hosting.static.items() -%}
-| **{{ item.name }}** | {{ item.status }} | {% if item.link_ready %}[View]({{ item.link }}{% endif %}) | {{ item.updated_at }} |
-{% endfor %}

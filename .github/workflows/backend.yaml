@@ -20,3 +20,8 @@ jobs:
         run: |
           cd examples/backend
           ./gradlew build jacocoTestReport
+
+      - name: Stoat
+        uses: ./action
+        with:
+          supabase_key: ${{ secrets.SUPABASE_ANON_KEY }}
