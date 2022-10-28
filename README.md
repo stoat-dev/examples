@@ -13,6 +13,9 @@ Docusaurus site built from latest `main` with Vercel and published to https://do
 ## branding
 Variations of logos, icons, etc.
 
+## supabase
+Supabase backend.
+
 ## examples
 Contains sample applications that are only built to demonstrate artifact hosting.
 
