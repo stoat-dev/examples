@@ -1,28 +1,20 @@
 ![Stoat Logo](branding/profile-round-64.png)
 # Stoat
 
-## action
-GitHub Action implementation. Built manually with `npm run build` in the `docs` directory and committed manually.
+## Projects
 
-## site
-NextJS built from the latest `main` with Vercel and published to https://stoat.dev/
+| Project | Description |
+| --- | --- |
+| [action](./action) | GitHub Action implementation. Built manually with `npm run build` in the `docs` directory and committed manually. |
+| [site](./site) | NextJS built from the latest `main` with Vercel and published to https://stoat.dev. |
+| [docs](./docs) | Docusaurus site built from latest `main` with Vercel and published to https://docs.stoat.dev/. |
+| [branding](./branding) | Variations of logos, icons, etc. |
+| [supabase](./supabase) | Supabase backend. |
+| [examples](./examples) | Sample projects to demonstrate artifact hosting. |
 
-## docs
-Docusaurus site built from latest `main` with Vercel and published to https://docs.stoat.dev/
+### Sample Projects
 
-## branding
-Variations of logos, icons, etc.
-
-## supabase
-Supabase backend.
-
-## examples
-Contains sample applications that are only built to demonstrate artifact hosting.
-
-### backend
-
-Sample Gradle project generating multiple JaCoCo HTML outputs.
-
-### frontend
-
-Sample React app that generates Storybook outputs.
+| Sample Project | Description |
+| --- | --- |
+| [backend](./examples/backend) | Sample Gradle project generating multiple JaCoCo HTML outputs. |
+| [frontend](./examples/frontend) | Sample React app that generates Storybook outputs. |
