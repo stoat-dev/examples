@@ -28,8 +28,6 @@ jobs:
             ${{ github.workspace }}/site/node_modules
             ${{ github.workspace }}/site/.next/cache
           key: ${{ runner.os }}-node-16-${{ hashFiles('site/yarn.lock') }}
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
       - name: Install supabase
         uses: supabase/setup-cli@v1
         with:
@@ -39,6 +37,7 @@ jobs:
       - name: Verify generated database types
         run: |
           cd site
+          yarn install --frozen-lockfile
           yarn db:schema
           yarn prettier:write
           if [ "$(git diff --ignore-space-at-eol src/db/schema.gen.ts | wc -l)" -gt "0" ]; then
