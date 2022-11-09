@@ -1,3 +1,4 @@
+enabled: true
 hosting:
   static:
     app_test_coverage:
