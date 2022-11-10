@@ -1,16 +1,23 @@
+---
+version: 1
 enabled: true
-hosting:
-  static:
-    app_test_coverage:
-      name: "`app` test coverage"
-      path: examples/app/build/reports/html/jacoco
-    lib_test_coverage:
-      name: "`lib` test coverage"
-      path: examples/lib/build/reports/html/jacoco
-    docs:
-      name: docs
-      path: docs/build
-    frontend:
-      name: storybook
-      path: examples/frontend/storybook-static
 comment_template: ".stoat/template.hbs"
+plugins:
+  app-test-coverage:
+    metadata:
+      name: "`app` test coverage"
+    static_hosting:
+      path: examples/app/build/reports/html/jacoco
+  lib-test-coverage:
+    metadata:
+      name: "`lib` test coverage"
+    static_hosting:
+      path: examples/lib/build/reports/html/jacoco
+  docs:
+    static_hosting:
+      path: docs/build
+  frontend:
+    metadata:
+      name: storybook
+    static_hosting:
+      path: examples/frontend/storybook-static
