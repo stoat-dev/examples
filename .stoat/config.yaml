@@ -7,14 +7,14 @@ plugins:
     metadata:
       name: "`app` test coverage"
     static_hosting:
-      path: examples/backend/app/build/reports/html/jacoco
+      path: backend/app/build/reports/html/jacoco
   list-test-coverage:
     metadata:
       name: "`list` test coverage"
     static_hosting:
-      path: examples/backend/list/build/reports/html/jacoco
+      path: backend/list/build/reports/html/jacoco
   frontend-storybook:
     metadata:
       name: storybook
     static_hosting:
-      path: examples/frontend/storybook-static
+      path: frontend/storybook-static

@@ -19,7 +19,7 @@ jobs:
 
       - name: Build Gradle Project
         run: |
-          cd examples/backend
+          cd backend
           ./gradlew build jacocoTestReport
 
       - name: Stoat

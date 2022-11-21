@@ -18,13 +18,13 @@ jobs:
 
       - name: Build Frontend App
         run: |
-          cd examples/frontend
+          cd frontend
           npm install
           npm run build
 
       - name: Build Storybook
         run: |
-          cd examples/frontend
+          cd frontend
           npm run build-storybook
 
       - name: Stoat
