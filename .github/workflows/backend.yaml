@@ -22,6 +22,6 @@ jobs:
           cd backend
           ./gradlew build jacocoTestReport
 
-      - name: Stoat
-        uses: ./action
+      - name: Run Stoat Action
+        uses: stoat-dev/stoat-action@v0.0.1
         if: always()
