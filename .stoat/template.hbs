@@ -5,3 +5,5 @@
 | **{{#if this.metadata.name}}{{{ this.metadata.name }}}{{else}}{{ @key }}{{/if}}** | {{{ this.static_hosting.link_md }}} | {{ this.static_hosting.sha }} | {{#if this.static_hosting.status_md}}{{{ this.static_hosting.status_md }}}{{else}}🔄{{/if}} |
 {{/if}}
 {{/each}}
+
+Gradle Build Time: {{#if plugins.gradle-build-time.json.value }}{{ plugins.gradle-build-time.json.value.seconds }} seconds{{else}}🔄{{/if}}

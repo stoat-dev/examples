@@ -18,3 +18,6 @@ plugins:
       name: storybook
     static_hosting:
       path: frontend/storybook-static
+  gradle-build-time:
+    json:
+      path: gradle-build-time.json
