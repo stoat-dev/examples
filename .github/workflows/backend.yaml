@@ -17,11 +17,19 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
 
+      - name: Record Start Time
+        run: |
+          date +%s > start.txt
+
       - name: Build Gradle Project
         run: |
           cd backend
           ./gradlew build jacocoTestReport
 
+      - name: Calculate Gradle Build Time
+        run: |
+          echo "{ \"seconds\": `expr $(date +%s) - $(cat start.txt)` }" > gradle-build-time.json
+
       - name: Run Stoat Action
-        uses: stoat-dev/stoat-action@v0.0.1
+        uses: stoat-dev/stoat-action@main
         if: always()
