@@ -31,5 +31,5 @@ jobs:
           echo "{ \"seconds\": `expr $(date +%s) - $(cat start.txt)` }" > gradle-build-time.json
 
       - name: Run Stoat Action
-        uses: stoat-dev/stoat-action@main
+        uses: stoat-dev/stoat-action@latest
         if: always()
