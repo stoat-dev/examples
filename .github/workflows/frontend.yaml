@@ -28,5 +28,5 @@ jobs:
           npm run build-storybook
 
       - name: Run Stoat Action
-        uses: stoat-dev/stoat-action@main
+        uses: stoat-dev/stoat-action@v0
         if: always()
