@@ -2,22 +2,22 @@
 version: 1
 enabled: true
 comment_template_file: ".stoat/template.hbs"
-tasks:
-  app-test-coverage:
-    metadata:
-      name: "`app` test coverage"
-    static_hosting:
+plugins:
+  job_runtime:
+    enabled: true
+  static_hosting:
+    app-test-coverage:
+      metadata:
+        name: "`app` test coverage"
       path: backend/app/build/reports/html/jacoco
-  list-test-coverage:
-    metadata:
-      name: "`list` test coverage"
-    static_hosting:
+    list-test-coverage:
+      metadata:
+        name: "`list` test coverage"
       path: backend/list/build/reports/html/jacoco
-  frontend-storybook:
-    metadata:
-      name: storybook
-    static_hosting:
+    frontend-storybook:
+      metadata:
+        name: storybook
       path: frontend/storybook-static
-  gradle-build-time:
-    json:
+  json:
+    gradle-build-time:
       path: gradle-build-time.json
